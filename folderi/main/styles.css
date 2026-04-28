@@ -1,3 +1,18 @@
-.body {
+body {
     background-color: lightgreen;
+}
+
+.header {
+    border: 2px solid gray;
+    background-color: lightgrey;
+}
+
+.main-content {
+    border: 2px solid gray;
+    background-color: lightgrey;
+}
+
+.side-content {
+    border: 2px solid gray;
+    background-color: lightgrey;
 }
