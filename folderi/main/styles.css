@@ -1,18 +1,103 @@
 body {
+    background-color: rgb(255, 255, 255);
+    min-width: 1024px;
+    max-width: 1024px;
+}
+.kaikki {
+    border: 2px solid rgb(128, 128, 128);
     background-color: lightgreen;
+    width: 1300px;
+    height: 970px;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    right: 15px;
+    margin: 0 auto;
 }
 
+/* sivun otsikko */
 .header {
+    width: 1280px;
+    height: 110px;
     border: 2px solid gray;
     background-color: lightgrey;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+}
+.top-header {
+    position: absolute;
+    left: 40px;
+    top: 15px;
 }
 
+/* Main content area */
 .main-content {
     border: 2px solid gray;
     background-color: lightgrey;
+    width: 880px;
+    height: 820px;
+    position: absolute;;
+    left: 30px;
+    top: 130px;
+    margin-right: 15px;
+}
+.main-text-header {
+    width: 880px;
+    height: 820px;
+    position: absolute;
+    left: 15px;
+    top: 0px;
+}
+.main-text-content-pt-1 {
+    width: 480px;
+    height: 100px;
+    position: absolute;
+    left: 15px;
+    top: 53px;
+    max-height: max-content 480px;
+   
+}
+.picture {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    right: 15px;
+    top: 40px;
+}
+.main-text-content-pt-2 {
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    right: 15px;
+    top: 230px;
+    max-height: max-content 480px;
+   
 }
 
+/* Side content area */
 .side-content {
     border: 2px solid gray;
     background-color: lightgrey;
+    width: 340px;
+    height: 820px;
+    position: absolute;
+    right: 30px;
+    top: 130px;
+}
+.side-content-header {
+    width: 340px;
+    height: 820px;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+.side-text-content {
+    width: 320px;
+    height: 100px;
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    max-height: max-content 480px;
 }
