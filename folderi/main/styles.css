@@ -101,3 +101,24 @@ body {
     top: 40px;
     max-height: max-content 480px;
 }
+.slideMenu {
+    border: 2px solid gray;
+    background-color: lightgrey;
+    width: 300px;
+    height: 820px;
+    position: fixed;
+    right: 73px;
+    top: 136.5px;
+    transition: right 0.3s ease-in-out;
+}
+.slideMenuBox {
+    color: rgb(0, 0, 0);
+    background-color: lightgray;
+    width: 20px;
+    height: 220px;
+    position: fixed;
+    font-size: 70px;
+    right: 370px;
+    top: 300px;
+    border-radius: 9px;
+}
