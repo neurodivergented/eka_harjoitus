@@ -1,5 +1,5 @@
 const slideMenu = document.querySelector('.slideMenu');
-const slideMenuBox = document.querySelector('.slideMenuBox');
+const slideMenuCursorBox = document.querySelector('.slideMenuCursorBox');
 const overlapTarget = document.querySelector('.side-content');
 
 function isOverlapping(sliderMenu, mainArea) {
@@ -7,24 +7,16 @@ function isOverlapping(sliderMenu, mainArea) {
 }
 
 function updateMenuVisibility() {
-    const menu = slideMenu.getBoundingClientRect();
-    const target = overlapTarget.getBoundingClientRect();
-    const hasOverlap = isOverlapping(menu, target);
-
-    if (slideMenu.classList.contains('open') && hasOverlap) {
+    if (slideMenu.classList.contains('open')) {
         slideMenu.classList.add('visible');
     } else {
         slideMenu.classList.remove('visible');
     }
 }
 
-slideMenuBox.addEventListener('mouseenter', () => {
-    slideMenu.classList.add('open');
-    updateMenuVisibility();
-});
-
-slideMenu.addEventListener('mouseleave', () => {
-    slideMenu.classList.remove('open');
+slideMenuCursorBox.addEventListener('click', () => {
+    slideMenu.classList.toggle('open');
+    slideMenuCursorBox.classList.toggle('open');
     updateMenuVisibility();
 });
 
