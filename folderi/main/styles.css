@@ -106,19 +106,29 @@ body {
     background-color: lightgrey;
     width: 300px;
     height: 820px;
-    position: fixed;
-    right: 73px;
+    position: absolute;
+    right: -300px;
     top: 136.5px;
-    transition: right 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.slideMenu.open {
+    right: -33px;
+    top: -1.5px;
+}
+.slideMenu.visible {
+    opacity: 1;
+    visibility: visible;
 }
 .slideMenuBox {
     color: rgb(0, 0, 0);
     background-color: lightgray;
     width: 20px;
     height: 220px;
-    position: fixed;
+    position: absolute;
     font-size: 70px;
-    right: 370px;
+    right: -32px;
     top: 300px;
     border-radius: 9px;
 }
