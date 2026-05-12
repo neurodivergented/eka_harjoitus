@@ -6,3 +6,87 @@
     left: 0px;
     background-color: rgb(32, 164, 100);
 }
+.peli_alue {
+    width: auto;
+    min-height: 100vh;
+    position: absolute;
+    top: 90px;
+    left: 900px;
+    background-color: rgb(32, 164, 100);
+    padding: 20px;
+}
+.card-row {
+    display: contents;
+}
+.card-row img {
+    width: 130px;
+    height: auto;
+    display: block;
+}
+.clean-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 72px);
+    grid-template-rows: repeat(4, auto);
+    gap: 70px;
+    row-gap: 10px;
+    padding: 4px;
+    justify-content: center;
+}
+.korttipeliTeksti {
+    grid-column: span 6;
+    text-align: center;
+    color: white;
+}
+.numberguide {
+    position: absolute;
+    font-size: 94px;
+    font-weight: bold;
+    color: white;
+}
+.number1 {
+    position: absolute;
+    left: 40px;
+    top: -70px;
+}
+.number2 {
+    position: absolute;
+    left: 183px;
+    top: -70px;
+}
+.number3 {
+    position: absolute;
+    left: 326px;
+    top: -70px;
+}
+.number4 {
+    position: absolute;
+    left: 462px;
+    top: -70px;
+}
+.number5 {
+    position: absolute;
+    left: 610px;
+    top: -70px;
+}
+.number6 {
+    position: absolute;
+    left: 750px;
+    top: -70px;
+}
+.deckShuffleButton {
+    position: absolute;
+    top: 100px;
+    left: -300px;
+    transform: translateX(-50%);
+    height: auto;
+    width: 500px;
+}
+.shuffleButton {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    border: black solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
